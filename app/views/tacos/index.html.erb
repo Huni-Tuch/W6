@@ -1,0 +1,22 @@
+
+<h1> Tacos are truly delicious </h1>
+<p> Menu:</p>
+
+<!-- 
+Using the <% %> tells HTML that we'll be using Ruby
+-->
+
+<%
+tacos = ["Carnitas", "Pastor", "Suadero", "Lengua", "Tinga"]
+%>
+
+<p>There are 
+    <%= tacos.count %>
+     tacos:
+</p>
+
+<ul>
+    <% for taco in tacos %>
+        <li> <%= taco %> </li>
+    <% end %>
+</ul>
